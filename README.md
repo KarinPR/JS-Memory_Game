@@ -1,9 +1,9 @@
 # JS-Memory_Game
  ## Rules  
 
-Turn two cards, if you guessed **CORRECTLY** they will stay turned, and you get to PLAY AGAIN.
+Turn two cards, if you guessed **CORRECTLY** they will stay turned, and you get to **PLAY AGAIN**.
 
-**IF NOT** they will flip back and the turn goes to the OTHER PLAYER.
+**IF NOT** they will flip back and the turn goes to the **OTHER PLAYER**.
 
 Your moves to solve this memory will be counted and stored.
 
