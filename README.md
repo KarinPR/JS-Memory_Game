@@ -1,4 +1,4 @@
-# JS-Memory_Game
+# JS-Memory Game
  ## Rules  
 
 Turn two cards, if you guessed **CORRECTLY** they will stay turned, and you get to **PLAY AGAIN**.
