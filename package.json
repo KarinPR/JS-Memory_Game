@@ -1,0 +1,11 @@
+{
+  "name": "js-memory",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "live": "browserify script.js > bundle.js && live-server"
+  },
+  "author": "",
+  "license": "ISC"
+}

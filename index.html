@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="./themes/back_img/icon.ico" />
+	<title> LOL Memory Game</title>
+	<link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="winoverlay hide">
+		<div>
+			<h1 class = "winnerslogan"></h1>
+			<p>It took <span class="finaltime">0</span> seconds and 
+			<span class="finalmoves">0</span> moves to solve this memory.</p>
+			<!-- <p class = "winnerslogan"></p> -->
+			<p class = "highscoreslogan"></p>
+			<button class="redo">Try again?</button>
+		</div>
+	</div>
+	<img class="background" src="./themes/back_img/background.jpg">
+	<div id="appouterdiv">
+		<div id="appinnerdiv">
+
+			<!-- HUD -->
+			<div id="mainup-container">
+				<div id = "uppernavbar">
+					<ul>
+				      <li>time: <span class="time">0</span></li>
+				      <li>moves: <span class="moves">0</span>highscore: <span class="highscore"></span></li>
+				      <li><i class="fas fa-redo-alt redo"></i></li>
+				      <li><i class="fas fa-question question"></i></li>
+				    </ul>
+					<div id="currentplayerdiv">
+						<h1 id="currentlyplayertitle">Current Player : </h1>
+						<h1 id="currentplayer">Player 1</h1>
+					</div>
+					<div class="about aboutHide">
+						<i class="far fa-arrow-alt-circle-left arrow"></i>
+						<h1>Rules</h1>
+						<p> Turn two cards, if you guessed <b>CORRECTLY</b> they will stay turned, and you get to <b>PLAY AGAIN</b>.</p>
+						<p> <b>IF NOT</b> they will flip back and the turn goes to the <b>OTHER PLAYER</b>. </p>
+						<p>Your moves to solve this memory will be counted and stored.</p> 
+						<p>So you can challenge yourself into beating your freinds and the highscore with less moves!</p>
+						<hr>
+						<h1>About</h1>
+						<p>This is a little "Birthday Present" for my dauther - MAY RABICHEV and a project I made for the <a href="https://www.udemy.com/the-complete-web-developer-zero-to-mastery/" target="_blank">Udemy course.</a></p>
+						<p>You can find my repository here:  <a href="#" target="_blank"><i class="fab fa-github fa-2x"></i></a></p>
+						<hr>
+						<p><i class="far fa-copyright"></i> Karin Povolozki-Rabichev, Israel</p>
+				    </div>
+				</div>
+
+				<div id="maintitle"></div>
+				<div class = "themesizemain">
+					<div class="choosethememaindiv" id="choosetheme">
+						<!-- choosethememaindiv -->
+						<div class="choosethemetitletext">Choose Theme</div>
+						<div class="choosethemediv">
+							<div class="choosethemeitem" id="petsdiv">pets</div>
+							<div class="choosethemeitem" id="bigsisdiv">big sis</div>
+							<div class="choosethemeitem" id="lilsisdiv">lil sis</div>
+						</div>
+					</div>
+
+					<div class="none" id="choosesize">
+						<!-- chooseboardsizemaindiv -->
+						<div class="chooseboardsizetitletext">Choose Size</div>
+						<div class="chooseboardsizediv"> 
+							<div class="chooseboardsizeitem" id="choosesize8">8</div>
+							<div class="chooseboardsizeitem" id="choosesize16">16</div>
+							<div class="chooseboardsizeitem" id="choosesize32">32</div>
+						</div>
+					</div>
+					
+					
+
+					<div class="none" id="maingameboarddiv">
+						<!-- maingameboarddiv -->
+						<div class="playerscorediv" id="playerscorediv1">
+							<div class="playerscoretext">Player 1 </div> <div class="scoreboard">
+								<div> moves</div> 
+								<div id="playeronescore">0</div>
+								<div class="matchedpairstext">Pairs</div>
+								<div id = "playeronepairs">0</div>
+							</div>	 
+						</div>
+						<div class="cardsareadiv">
+							<div id="match-container"></div>
+						</div>
+						<div class="playerscorediv" id="playerscorediv2">
+							<div class="playerscoretext">Player 2</div>
+							<div class="scoreboard">
+								<div> moves</div>
+								<div id="playertwoscore">0</div>
+								<div class="matchedpairstext">Pairs</div>
+								<div id = "playertwopairs">0</div>
+							</div> 
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>All picutres used in this project originate from the internet and are property of their respective owners, No Copyright infringement intended. </p>	
+			<!-- Game Board -->
+			<!-- <div id="match-container"> -->
+				<!-- example of layout -->			
+				<!-- <div class="card"> -->
+					<!-- <div id="f1" class="eight sixteen thirtytwo"> -->
+						<!-- <div class="front"></div> -->
+						<!-- <div class="back"></div> -->
+						<!-- <div id="b1" class="back"></div> -->
+					<!-- </div> -->
+		</div>
+	</div>
+<!-- <script type="text/javascript"></script> -->
+
+	<script type="module" src="bundle.js"> </script>
+</body>
+</html>
